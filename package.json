@@ -6,11 +6,12 @@
   "scripts": 
   {
     "start": "node server.js",
-    "dev":"modemon server.js"  
+    "dev":"nodemon server.js"  
   },
   "keywords": ["node.js", "express", "moment"],
   "author": "Anuj",
   "license": "ISC",
+  
   "dependencies": {
     "express": "^4.17.1",
     "moment": "^2.29.1",
