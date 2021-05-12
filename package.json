@@ -2,7 +2,7 @@
   "name": "chatbot",
   "version": "1.0.0",
   "description": "Chat Bot Application with Traversy Media by using node.js and express",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": 
   {
     "start": "node server.js",
