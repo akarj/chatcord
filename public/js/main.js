@@ -3,7 +3,7 @@
 const chatForm = document.getElementById("chat-form");
 const chatMessages = document.querySelector(".chat-messages");
 const roomName = document.getElementById("room-name");
-const userList = document.getElementById("");
+const userList = document.getElementById("users");
 
 const socket = io();
 
@@ -25,7 +25,7 @@ socket.on("roomUsers", ({ room, users }) => {
 
 //Message from server
 socket.on("message", (message) => {
-  console.log(message);
+  // console.log(message);
   outputMessage(message);
 
   //Scroll Down
@@ -43,8 +43,8 @@ chatForm.addEventListener("submit", (event) => {
   socket.emit("chatMessage", msg);
 
   //Clear Input
-  e.target.elements.msg.value = "";
-  e.target.elements.msg.focus();
+  event.target.elements.msg.value = "";
+  event.target.elements.msg.focus();
 });
 
 //Output message to DOM

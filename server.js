@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const http = require("http");
 const socket = require("socket.io");
-const { isObject } = require("util");
 const formatMessage = require("./utils/messages");
 const {
   userJoin,
